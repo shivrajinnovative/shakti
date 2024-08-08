@@ -1,0 +1,140 @@
+@font-face{
+    font-family: "regularBrush";
+    src: url('./fonts/Regular\ Brush.otf');
+}
+@font-face{
+    font-family: "tahoma";
+    src: url('./fonts/tahoma.ttf');
+}
+body{
+    font-family: "tahoma";
+}
+.bg-danger{
+    background-color: #ED1F24 !important;
+}
+.bg-dark{
+    background-color: #1B1B1B !important;
+}
+.bg-transparent-black{
+    
+    background-color: #717171b3 !important;
+}
+.btn-danger{
+    background-color: #ED1F24 !important;
+}
+
+.ff-brush{
+    font-family: "regularBrush";
+    font-size: 100px;
+}
+.border-right{
+    border-right: 2px dashed rgba(171, 171, 171, 0.742);
+}
+.container-2xl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 1.5rem);
+    /* padding-left: var(--bs-gutter-x, 1.5rem); */
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 1600px) {
+    .container-2xl {
+      max-width: 1600px;
+    }
+  }
+
+.heading{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.heading::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 150px;
+    background-color: #ED1F24;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////// index Page ///////////////////////////////////////////// */
+.carousel-item{
+    position: relative;
+}
+.carousel-caption{
+    position: absolute;
+    top: 30%;
+}
+@media (max-width:500px){
+    .carousel-caption{
+        top: -10%;
+        left: -5%;
+        transform: scale(0.6);
+    }
+    
+}
+.aboutBg{
+    background-image: url('./about/background.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.service{
+    width: 30%;
+    padding: 30px;
+    text-align: center  ;
+    padding-top: 80px;
+}
+
+@media(max-width:500px){
+    .service{
+        width: 80%;
+        padding-top: 80px;
+    }
+    .border-right{
+        border-right: none;
+    }
+}
+
+
+.container-2xl.gallery{
+    padding: 0;
+}
+.gallery *{
+    padding: 0;
+}
+.footer{
+    background:url('./icons/footer.png');
+    background-size: cover;
+}
+.icons a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* ///////////////////////////////////////////////////////// contact us /////////////////////////////////////////////// */
+header.header{
+    background-image: url('./bg/contact-us.png');
+    background-size: cover;
+    background-position: right bottom;
+}
+.border-bottom{
+    border-color: rgba(128, 128, 128, 0.778) !important;
+}
