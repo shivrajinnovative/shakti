@@ -22,10 +22,41 @@ body{
 .btn-danger{
     background-color: #ED1F24 !important;
 }
-
 .ff-brush{
     font-family: "regularBrush";
     font-size: 100px;
+}
+nav{
+    right: -100%;
+    top: 0;
+    z-index: 9999;
+    line-height: 40px;
+    transition: all .5s;
+    box-shadow: -5px 0 10px -5px black;
+}
+nav img{
+    filter: drop-shadow(0 0 3px black);
+    margin-bottom: 40px;
+}
+nav i{
+    color: #ED1F24;
+}
+.navCloseBtn{
+    color: red;
+    font-size: 24px;
+}
+.navOpenBtn,.navCloseBtn{
+    cursor: pointer;
+}
+nav a{
+    transition: all .5s;
+}
+nav a:hover{
+    color: #ED1F24 !important;
+    font-weight: bold;
+    text-decoration: underline !important;
+    text-underline-offset: 10px;
+    padding-left: 10px;
 }
 .border-right{
     border-right: 2px dashed rgba(171, 171, 171, 0.742);
@@ -37,41 +68,34 @@ body{
     margin-right: auto;
     margin-left: auto;
   }
-  @media (min-width: 1600px) {
+@media (min-width: 1600px) {
     .container-2xl {
-      max-width: 1600px;
+        max-width: 1600px;
     }
-  }
-
+}
 .heading{
     position: relative;
     padding-bottom: 10px;
 }
-
 .heading::before{
     position: absolute;
     content: "";
     display: block;
     height: 2px;
-    width: 150px;
+    width: 140px;
     background-color: #ED1F24;
     bottom: 0;
     left: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+header.header{
+    background-size: cover;
+    background-position: right bottom;
+}
+.headingCenter{
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #ED1F24;
+}
 /* ///////////////////////////////////////////////// index Page ///////////////////////////////////////////// */
 .carousel-item{
     position: relative;
@@ -86,7 +110,6 @@ body{
         left: -5%;
         transform: scale(0.6);
     }
-    
 }
 .aboutBg{
     background-image: url('./about/background.png');
@@ -99,7 +122,6 @@ body{
     text-align: center  ;
     padding-top: 80px;
 }
-
 @media(max-width:500px){
     .service{
         width: 80%;
@@ -109,8 +131,6 @@ body{
         border-right: none;
     }
 }
-
-
 .container-2xl.gallery{
     padding: 0;
 }
@@ -130,11 +150,80 @@ body{
 }
 
 /* ///////////////////////////////////////////////////////// contact us /////////////////////////////////////////////// */
-header.header{
-    background-image: url('./bg/contact-us.png');
-    background-size: cover;
-    background-position: right bottom;
-}
+
 .border-bottom{
     border-color: rgba(128, 128, 128, 0.778) !important;
+}
+
+/* //////////////////////////////////// about ////////////////////////////////////////////// */
+.about-img1,.about-img2{
+    position: relative;
+    z-index: 10;
+}
+.about-img1::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    bottom: -15px;
+    left: -15px;
+    z-index: -1;
+}
+.about-img2::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    right: -15px;
+    top: -15px;
+    z-index: -1;
+}
+.awards div{
+    height: 200px;
+    width: 22%; 
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 2px dashed rgba(157, 157, 157, 0.81); 
+}
+.awards div img{
+    max-height:90%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.bg-guiter{
+    background: url('./about/OBJECTS.png') no-repeat bottom right;
+}
+@media (max-width:768px){
+    .awards div{
+        height: 200px;
+        width: 30%;    
+    }
+}
+@media (max-width:500px){
+    .awards div{
+        height: 140px;
+        width: 40%;    
+    }
+}
+/* ////////////////////////  Booking /////////////////////////////////////// */
+
+.bookingForm{
+
+}
+.bookingForm label{
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.bookingForm input,.bookingForm textarea{
+    width: 100%;
+    background: transparent;
+    border:1px solid rgba(175, 175, 175, 0.859);
+    padding: 5px 0;
 }

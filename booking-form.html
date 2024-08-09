@@ -38,41 +38,93 @@
 
 
 
-      <header class="header" style="background-image:  url('./assets/bg/contact-us.png');">
+      <header class="header" style="background-image:  url('./assets/bg/booking.png');">
         <div class="container py-2">
-            <h1 class="py-5 my-5 text-white fs-5">Home <i class="fa-solid fa-chevron-right"></i> Contact us </h1>
+            <h1 class="py-5 my-5 text-white fs-5">Home <i class="fa-solid fa-chevron-right"></i> Booking Form    </h1>
         </div>  
       </header>
 
 
       <div class="container py-3 py-md-5">
         <div class="d-flex flex-column align-items-center justify-content-center">
-                <h1 class="heading ">Contact us</h1>
-                <p class="my-3 mb-md-5" >Reach out for a New Project or just say hello</p>
+                <h1 class="heading ">Booking Form</h1>
+                <p class="my-3 mb-md-5" >Book Your Event with Shakti Entertainment: Unforgettable Experiences Await</p>
         </div>
-        <div class="row shadow">
-            <div class="col-lg-6 p-3 p-md-5 contactUS">
-                <p class="fs-4">Send Us A Message</p>
-                <input type="text" class="w-100 py-3 mb-3 border-0 border-bottom" placeholder="Your Name">
-                <input type="text" class="w-100 py-3 mb-3 border-0 border-bottom" placeholder="Your Email">
-                <input type="text" class="w-100 py-3 mb-3 border-0 border-bottom" placeholder="Subject">
-                <textarea name="" class="w-100 py-3 mb-3 border-0 border-bottom" rows="5" placeholder="Your Message" id=""></textarea>
-                <button class="btn btn-dark w-100 rounded-0 py-2 my-4" >Submit</button>
+        <form class="row bg-light bookingForm p-3 p-md-5 shadow">
+          <div class="col-lg-6 mb-3">
+            <label for="">Your Name <span>*</span></label>
+            <input type="text">
+          </div>
+          <div class="col-lg-6 mb-3">
+            <label for="">Phone </label>
+            <input type="text">
+          </div>
+          <div class="col-lg-6 mb-3">
+           <div class="col-6">
+            <label for="">Date</label>
+            <input type="date">
+           </div>
+          </div>
+          <div class="col-lg-6 mb-3">
+            <div class="col-6">
+                
+            <label for="">Hours</label>
+            <input type="text">
             </div>
-            <div class="col-lg-6 bg-black p-3 p-md-5 text-light">
-                    <p class="fs-3" > Contact  Info</p>
-                    
-                    <p class="text-danger mt-3 pt-3 pt-md-5 mt-md-5">Call Us At</p>
-                    <p>(+91) 9167833578</p>
-                    <p class="text-danger mt-3 pt-3 pt-md-5">Email Us At</p>
-                    <p>mail@shaktientertainment.in</p>
-                    <div class="icons mt-3 pt-3 pt-md-4">
-                        <a href="" class="bg-white mx-2 rounded-circle  text-black" ><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="" class="bg-white mx-2 rounded-circle  text-black" ><i class="fa-brands fa-instagram"></i></a>
-                        <a href="" class="bg-white mx-2 rounded-circle  text-black" ><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <div class="col-lg-6 mb-3">
+            <label for="">Subject </label>
+            <input type="text">
+          </div>
+          <div class="col-lg-6 mb-3">
+            <label for="">Time Frame</label>
+            <div class="row">
+                <div class="col-6 col-md-3  my-1 d-flex  ">
+                    <label for="">1 Hours</label>
+                    <input type="radio">
+                </div>
+                <div class="col-6 col-md-3 p-0 my-1 d-flex  ">
+                    <label for="">2/3 Hours</label>
+                    <input type="radio">
+                </div>
+                <div class="col-6 col-md-3 p-0 my-1 d-flex  ">
+                    <label for="">5 Hours</label>
+                    <input type="radio">
+                </div>
+                <div class="col-6 col-md-3 p-0 my-1 d-flex  ">
+                    <label for="">All Nights</label>
+                    <input type="radio">
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-6 mb-3">
+                <label for="">Party </label>
+                <div class="d-flex flex-wrap">
+                   <div class="d-flex col-5 col-md-3 p-0 pe-4 me-3" >
+                    <label for="">Festival</label>
+                    <input type="checkbox">
+                   </div>
+
+                    <div class="d-flex col-5 col-md-3 p-0 pe-4 me-3" >
+                    <label for="">Live Act</label>
+                    <input type="checkbox">
                     </div>
+
+                    <div class="d-flex col-5 col-md-3 p-0 pe-4 me-3" >
+                       <label for="">DJ Set</label>
+                    <input type="checkbox">
+                    </div>
+
+                </div>
             </div>
-        </div>
+          <div class="mb-3">
+            <label for="">Your Message</label>
+            <textarea name="" rows="4" id=""></textarea>
+          </div>
+          <div>
+            <button class="btn btn-danger rounded-pill px-5">Submit</button>
+          </div>
+        </form>
     </div>
 
 
