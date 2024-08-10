@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @font-face{
     font-family: "regularBrush";
     src: url('./fonts/Regular\ Brush.otf');
@@ -7,7 +9,9 @@
     src: url('./fonts/tahoma.ttf');
 }
 body{
-    font-family: "tahoma";
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight:500;
 }
 .bg-danger{
     background-color: #ED1F24 !important;
@@ -16,7 +20,6 @@ body{
     background-color: #1B1B1B !important;
 }
 .bg-transparent-black{
-    
     background-color: #717171b3 !important;
 }
 .btn-danger{
@@ -26,6 +29,21 @@ body{
     font-family: "regularBrush";
     font-size: 100px;
 }
+.ff-oswald{
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.text-justify{
+    text-align: justify;
+}
+header.sticky-top{
+    
+}
+header.sticky-top img{
+    height: 70px;
+    margin: 10px 0;
+}
 nav{
     right: -100%;
     top: 0;
@@ -34,15 +52,11 @@ nav{
     transition: all .5s;
     box-shadow: -5px 0 10px -5px black;
 }
-nav img{
-    filter: drop-shadow(0 0 3px black);
-    margin-bottom: 40px;
-}
 nav i{
     color: #ED1F24;
 }
 .navCloseBtn{
-    color: red;
+    /* color: white; */
     font-size: 24px;
 }
 .navOpenBtn,.navCloseBtn{
@@ -61,28 +75,20 @@ nav a:hover{
 .border-right{
     border-right: 2px dashed rgba(171, 171, 171, 0.742);
 }
-.container-2xl {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 1.5rem);
-    /* padding-left: var(--bs-gutter-x, 1.5rem); */
-    margin-right: auto;
-    margin-left: auto;
-  }
-@media (min-width: 1600px) {
-    .container-2xl {
-        max-width: 1600px;
-    }
-}
+
 .heading{
     position: relative;
     padding-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .heading::before{
     position: absolute;
     content: "";
     display: block;
     height: 2px;
-    width: 140px;
+    width: 120px;
     background-color: #ED1F24;
     bottom: 0;
     left: 0;
@@ -96,6 +102,12 @@ header.header{
     text-underline-offset: 15px;
     text-decoration-color: #ED1F24;
 }
+@media (max-width:500px){
+    header.sticky-top img{
+        height: 50px;
+        margin: 10px 0;
+    }
+}
 /* ///////////////////////////////////////////////// index Page ///////////////////////////////////////////// */
 .carousel-item{
     position: relative;
@@ -104,11 +116,29 @@ header.header{
     position: absolute;
     top: 30%;
 }
+.carousel>button{
+    top: auto;
+    bottom: 20px
+}
+.carousel>button img{
+    width: 40px  !important;
+}
+.carousel-control-prev{
+    left: auto;
+    right: 70px;
+}
+.carousel .display-1{
+    font-size: 10vw;
+}
+.carousel p{
+    font-size: 2vw !important;
+}
 @media (max-width:500px){
     .carousel-caption{
-        top: -10%;
-        left: -5%;
-        transform: scale(0.6);
+        top: 0%;
+    }
+    .carousel>button img{
+        width: 30px  !important;
     }
 }
 .aboutBg{
@@ -119,8 +149,11 @@ header.header{
 .service{
     width: 30%;
     padding: 30px;
-    text-align: center  ;
-    padding-top: 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+.service img{
+    width: 60px;
 }
 @media(max-width:500px){
     .service{
@@ -148,13 +181,10 @@ header.header{
     text-align: center;
     line-height: 30px;
 }
-
 /* ///////////////////////////////////////////////////////// contact us /////////////////////////////////////////////// */
-
 .border-bottom{
     border-color: rgba(128, 128, 128, 0.778) !important;
 }
-
 /* //////////////////////////////////// about ////////////////////////////////////////////// */
 .about-img1,.about-img2{
     position: relative;
@@ -212,10 +242,6 @@ header.header{
     }
 }
 /* ////////////////////////  Booking /////////////////////////////////////// */
-
-.bookingForm{
-
-}
 .bookingForm label{
     width: 100%;
     font-size: 14px;
